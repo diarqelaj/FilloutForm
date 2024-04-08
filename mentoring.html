@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENTORIMI</title>
+
+    <link rel="stylesheet" href="mentoringcss.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <section id="content">
+
+
+        <div class="page">
+
+            <header>
+                <h1>Mentoring</h1>
+                <p>Fill out the form as required</p>
+            </header>
+
+            <form id="form-id">
+
+                <fieldset>
+                    <legend>Personal INformation</legend>
+                    <div class="fieldset-wrapper">
+
+                        <div class="col-2">
+                            <div class="input-wrapper">
+                                <label for="nome">Name</label>
+                                <input type="text" id="nome" required />
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="sobrenome">Surname</label>
+                                <input type="text" id="sobrenome" />
+                            </div>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="email">Email<span>(enterl a valid email)</span></label>
+                            <input type="email" id="E-mail" required />
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="senha">Password<span>(minimum 6 characters)</span></label>
+                            <input type="password" id="senha" required minlength="6" />
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Mentor Information</legend>
+                    <div class="fieldset-wrapper">
+
+                        <div class="input-wrapper">
+                            <label for="name">Name of your mentor<span>(first name only)</span></label>
+                            <input type="name" id="name" />
+                        </div>
+
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Available Times</legend>
+                    <div class="fieldset-wrapper">
+
+                        <div>
+
+                            <div class="legend-mentoria">First Mentoring</div>
+                            <div class="col-3">
+
+                                <div class="input-wrapper">
+                                    <label for="data">Date</label>
+                                    <input type="date" id="data" required />
+                                </div>
+
+                                <div class="wrapper-horas">
+
+                                    <div class="input-wrapper">
+                                        <label for="tempo">of</label>
+                                        <input type="time" id="tempo" required />
+                                    </div>
+
+                                    <div class="input-wrapper">
+                                        <label for="fim-hora">until</label>
+                                        <input type="time" id="fim-hora" required />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div>
+
+                            <div class="legend-mentoria">Second Mentoring</div>
+                            <div class="col-3">
+
+                                <div class="input-wrapper">
+                                    <label for="data">Date</label>
+                                    <input type="date" id="data" required />
+                                </div>
+
+                                <div class="wrapper-horas">
+                                    <div class="input-wrapper">
+                                        <label for="tempo">of</label>
+                                        <input type="time" id="tempo" required />
+                                    </div>
+
+                                    <div class="input-wrapper">
+                                        <label for="fim-hora">until</label>
+                                        <input type="time" id="fim-hora" required />
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+            </form>
+
+            <footer>
+                <button class="button" form="form-id">Save</button>
+            </footer>
+
+        </div>
+    </section>
+</body>
+
+</html>
